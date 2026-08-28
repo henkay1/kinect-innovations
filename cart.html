@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cart | Kinect Innovations LLC</title>
+<meta name="description" content="Review the services, packages, and products in your Kinect Innovations LLC cart before checkout.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <span class="mark"></span>
+      <span>Kinect Innovations LLC<small>Environment Management Solutions</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="packages.html">Packages</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="header-actions">
+      <a href="cart.html" class="cart-link" aria-label="View cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
+        <span class="cart-badge" data-count="0">0</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" aria-label="Mobile">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="packages.html">Packages</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="cart.html">Cart</a>
+  </nav>
+</header>
+<main>
+
+<section class="section">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Cart</div>
+    <div class="section-head">
+      <div class="eyebrow">Your Order</div>
+      <h1>Cart</h1>
+    </div>
+
+    <div id="cart-empty" class="empty-cart" style="display:none;">
+      <p style="margin-bottom:1.2em;">Your cart is empty.</p>
+      <a href="services.html" class="btn btn-signal">Browse Services</a>
+    </div>
+
+    <div id="cart-filled" class="split" style="align-items:flex-start;display:none;">
+      <div style="grid-column:1/-1;max-width:100%;">
+        <table class="cart-table" id="cart-table">
+          <thead>
+            <tr><th>Item</th><th>Price</th><th>Qty</th><th>Total</th><th></th></tr>
+          </thead>
+          <tbody id="cart-rows"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="cart-summary-wrap" style="display:none;margin-top:32px;" class="split">
+      <div></div>
+      <div class="cart-summary">
+        <div class="summary-row"><span>Subtotal</span><span id="cart-subtotal">$0.00</span></div>
+        <div class="summary-row"><span>Estimated Tax</span><span id="cart-tax">Calculated at checkout</span></div>
+        <div class="summary-row total"><span>Total</span><span id="cart-total">$0.00</span></div>
+        <a href="checkout.html" class="btn btn-signal btn-block" style="margin-top:16px;">Proceed to Checkout</a>
+        <a href="services.html" class="btn btn-outline btn-block" style="margin-top:10px;">Continue Browsing</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="color:#fff;margin-bottom:14px;">
+          <span class="mark" style="border-color:#fff;"></span>
+          <span>Kinect Innovations LLC</span>
+        </div>
+        <p>Comprehensive environment management — optimizing physical workspace and technical infrastructure for commercial and residential clients across the U.S.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="products.html">Products</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="checkout.html">Checkout</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-conditions.html">Terms &amp; Conditions</a></li>
+          <li><a href="legal-notice.html">Legal Notice</a></li>
+          <li><a href="cookies-notice.html">Cookie Notice</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; <span class="current-year">2026</span> Kinect Innovations LLC. All rights reserved.</div>
+      <nav class="footer-bottom-nav" aria-label="Legal">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-conditions.html">Terms &amp; Conditions</a>
+        <a href="legal-notice.html">Legal Notice</a>
+        <a href="cookies-notice.html">Cookie Notice</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<div class="cookie-banner" role="dialog" aria-label="Cookie notice">
+  <p>We use cookies to operate this site and, with your consent, to analyze traffic and remember your cart. See our <a href="cookies-notice.html">Cookie Notice</a> and <a href="privacy-policy.html">Privacy Policy</a> for details.</p>
+  <div class="cookie-actions">
+    <button class="btn btn-signal" data-cookie-accept>Accept All</button>
+    <button class="btn btn-outline" style="border-color:rgba(255,255,255,.4);color:#fff;" data-cookie-reject>Reject Non-Essential</button>
+  </div>
+</div>
+<script src="data/catalog.js"></script>
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script>
+(function(){
+  function render(){
+    var items = KinectCart.read();
+    var empty = document.getElementById("cart-empty");
+    var filled = document.getElementById("cart-filled");
+    var summary = document.getElementById("cart-summary-wrap");
+    var rows = document.getElementById("cart-rows");
+    rows.innerHTML = "";
+
+    if(items.length === 0){
+      empty.style.display = "block";
+      filled.style.display = "none";
+      summary.style.display = "none";
+      return;
+    }
+    empty.style.display = "none";
+    filled.style.display = "grid";
+    summary.style.display = "grid";
+
+    items.forEach(function(item){
+      var tr = document.createElement("tr");
+      tr.innerHTML =
+        '<td><div class="cart-item-name">' + item.name + '</div><div class="cart-item-meta">' + item.id + (item.unit ? " · " + item.unit : "") + '</div></td>' +
+        '<td>' + KinectCart.formatMoney(item.price) + '</td>' +
+        '<td><div class="qty-control">' +
+          '<button type="button" data-dec="' + item.id + '" aria-label="Decrease quantity">−</button>' +
+          '<input type="text" inputmode="numeric" value="' + item.qty + '" data-qty="' + item.id + '" aria-label="Quantity">' +
+          '<button type="button" data-inc="' + item.id + '" aria-label="Increase quantity">+</button>' +
+        '</div></td>' +
+        '<td>' + KinectCart.formatMoney(item.price * item.qty) + '</td>' +
+        '<td><button type="button" class="remove-link" data-remove="' + item.id + '">Remove</button></td>';
+      rows.appendChild(tr);
+    });
+
+    var subtotal = KinectCart.subtotal();
+    document.getElementById("cart-subtotal").textContent = KinectCart.formatMoney(subtotal);
+    document.getElementById("cart-total").textContent = KinectCart.formatMoney(subtotal);
+  }
+
+  document.addEventListener("click", function(e){
+    var inc = e.target.closest("[data-inc]");
+    var dec = e.target.closest("[data-dec]");
+    var rem = e.target.closest("[data-remove]");
+    if(inc){
+      var items = KinectCart.read();
+      var it = items.find(function(i){ return i.id === inc.dataset.inc; });
+      if(it) KinectCart.updateQty(it.id, it.qty + 1);
+      render();
+    }
+    if(dec){
+      var items2 = KinectCart.read();
+      var it2 = items2.find(function(i){ return i.id === dec.dataset.dec; });
+      if(it2) KinectCart.updateQty(it2.id, Math.max(1, it2.qty - 1));
+      render();
+    }
+    if(rem){
+      KinectCart.remove(rem.dataset.remove);
+      render();
+    }
+  });
+
+  document.addEventListener("change", function(e){
+    if(e.target.matches("[data-qty]")){
+      KinectCart.updateQty(e.target.dataset.qty, e.target.value);
+      render();
+    }
+  });
+
+  document.addEventListener("DOMContentLoaded", render);
+})();
+</script>
+
+</body>
+</html>
