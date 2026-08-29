@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://henkay1.github.io/kinect-innovations-llc/sitemap.xml
+Sitemap: https://kinectinnovations.help/sitemap.xml
