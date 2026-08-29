@@ -71,9 +71,9 @@ document.addEventListener("DOMContentLoaded", () => {
         })
           .then(res => {
             if (res.ok) finish(true, "Thanks — your message has been sent. We'll be in touch within 1 business day.");
-            else finish(false, "Something went wrong sending your message. Please email us directly at hello@kinectinnovationsllc.com.");
+            else finish(false, "Something went wrong sending your message. Please email us directly at support@kinectinnovationsllc.com.");
           })
-          .catch(() => finish(false, "Something went wrong sending your message. Please email us directly at hello@kinectinnovationsllc.com."));
+          .catch(() => finish(false, "Something went wrong sending your message. Please email us directly at support@kinectinnovationsllc.com."));
       } else {
         // No backend configured yet — store locally so the demo is fully functional,
         // and tell the site owner how to wire up real delivery (see README).
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
           localStorage.setItem(key, JSON.stringify(existing));
           finish(true, "Thanks — your message has been received. We'll be in touch within 1 business day.");
         } catch (err) {
-          finish(false, "Something went wrong. Please email us directly at hello@kinectinnovationsllc.com.");
+          finish(false, "Something went wrong. Please email us directly at support@kinectinnovationsllc.com.");
         }
       }
     });

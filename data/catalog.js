@@ -50,4 +50,7 @@ const KINECT_CATALOG = {
       desc: "Alcohol-balanced wipes formulated to clean monitors, keyboards, and touch surfaces without residue." },
     { id: "PRD-03", name: "Anti-Static Microfiber Cloth Set (6-pack)", price: 12.99,
       desc: "Lint-free, anti-static cloths for safe dusting of electronics and sensitive equipment." },
-    { id: "PRD-04", name: "Cable Management Sleeve Kit", price:
+    { id: "PRD-04", name: "Cable Management Sleeve Kit", price: 16.99,
+      desc: "Flexible neoprene cable sleeves and clips for bundling and concealing desk and rack cabling." }
+  ]
+};
